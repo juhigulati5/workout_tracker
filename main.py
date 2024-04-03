@@ -26,9 +26,9 @@ headers = {
 
 parameters = {
     "query": QUERY,
-    "weight_kg": 90,
-    "height_cm": 162.56,
-    "age": 22
+    "weight_kg": YOUR_WEIGHT,
+    "height_cm": YOUR_HEIGHT,
+    "age": YOUR_AGE
 }
 response = requests.post(url=NUTRIONIX_ENDPOINT, json=parameters, headers=headers)
 response.raise_for_status()
